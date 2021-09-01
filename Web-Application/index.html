@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmEasy</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="leaf.png" />
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+    body {
+        font-family: 'Libre Baskerville', serif;
+        background: #b7e4c7;
+    }
+    
+    .container h1 {
+        font-family: 'Allison', cursive;
+        font-size: 75px;
+        text-align: center;
+        color: #7f4f24;
+    }
+    
+    .container p {
+        font-size: 13px;
+        line-height: 23px;
+    }
+    
+    .particular {
+        margin-left: 85px;
+    }
+    
+    .jumbotron h2 {
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+    .card-body h3 {
+        font-size: 16px;
+        color: #6f1d1b;
+        text-decoration: underline;
+    }
+    
+    .primary {
+        border: 1px solid #40916c;
+        padding: 15px;
+        color: #40916c;
+    }
+    
+    .row a {
+        text-decoration: none;
+    }
+    
+    .primary:hover {
+        background: #40916c;
+        transition: .3s ease;
+        color: white;
+    }
+</style>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html" class="navbar-brand">
+                    <img src="leaf.png" width="30" height="28" alt="Logo">
+                </a>
+                <a class="navbar-brand" href="index.html">FarmEasy</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#cropRecommendation">Crop Recommendation</a></li>
+                    <li><a href="#cropProduction">Yield Prediction</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar Ends-->
+
+    <!-- Jumbotron -->
+    <div class="container">
+        <div class="jumbotron">
+            <h1>FarmEasy</h1>
+            <p class="particular">Anticipate your harvest and all out creation as indicated by your dirt, environment and district utilizing Machine Learning.</p>
+        </div>
+    </div>
+    <!-- Jumbotron Ends -->
+
+    <!-- Carousel -->
+    <div class="container">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="./pexels-lisa-109260.jpg" alt="Carousel 1" style="width:100%;">
+                </div>
+
+                <div class="item">
+                    <img src="./pexels-pixabay-207247.jpg" alt="Carousel 2" style="width:100%;">
+                </div>
+
+                <div class="item">
+                    <img src="./pexels-toan-pham-2681673.jpg" alt="Carousel 3" style="width:100%;">
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <!-- Carousel Ends -->
+    <br>
+
+    <!-- About -->
+    <div class="container" id="about">
+        <div class="jumbotron">
+            <h2>About</h2>
+            <br>
+            <p>
+                Today, practically the whole economy is being supported by farming, which is the backbone of the towns. It contributes 16% of the general GDP and records for work of roughly 52% of the Indian populace. Fast development in farming is fundamental for confidence
+                as well as to procure significant unfamiliar trade. Indian ranchers are top-notch underway and efficiency notwithstanding of the way that millions are peripheral and little ranchers. They take on further developed agribusiness innovation
+                as effectively as ranchers in created nations. Ranchers become acquainted with the best harvest which gives more benefit to them utilizing Machine Learning. </p>
+        </div>
+    </div>
+    <!-- About Ends -->
+
+    <!-- Crop Recommendation -->
+    <div id="cropRecommendation" class="container">
+        <div class="jumbotron">
+            <h2>Crop Recommendation</h2>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Essential Nutrients</h3>
+                            <p class="card-text">Nitrogen (N), phosphorous (P), and potassium (K) are the three main nutrients that are conventionally supplied by inorganic fertilizers</p>
+
+                            <!-- The Modal -->
+                            <div class="modal" id="myModal1">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <h2 class="modal-title">SOIL TEST PARAMETERS / NUTRIENTS</h2>
+                                            <button type="button" class="close" data-dismiss="modal">×</button>
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            1.Ratio of soil to extractant <br> 2.Shaking time, action and speed <br> 3.Overall techniques used in the lab <br> 4.Cut-off" levels for high test results <br> 5.Nitrogen ,Phosphorus,Sulphur <br> 6.FERTILIZER
+                                            PLACEMENT <br>
+                                        </div>
+
+                                        <!-- Modal footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <a href="https://soilhealth.dac.gov.in/NewHomePage/StateWiseNPKChart" class="primary" target="_blank">Get Your Soil Health Card</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Temperature</h3>
+                            <p class="card-text">Temperature increase reduces global yields of major crops in four independent estimates 1.Significance,2.Abstract,3.Results and Discussion</p>
+
+
+                            <!-- The Modal -->
+                            <div class="modal" id="myModal2">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">×</button>
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            <p>
+                                                Notwithstanding how good light and dampness conditions might be, plant development stops when the air and leaf temperature dips under a specific least or surpasses a specific greatest worth. <br> Between
+                                                these limits, there is an ideal temperature at which development continues with most prominent velocity. <br> These three temperature focuses are the cardinal temperatures for a given plant; the cardinal
+                                                temperatures are known for most plant species, around. <br> Cool-season crops (oats, rye, wheat, and grain) have low cardinal temperatures: least 32° to 41° F (0° to 5° C), ideal 77° to 88° F (25° το 31°
+                                                C), and most extreme 88° το 99° F (31° to 37° C). <br> For hot-season crops, like melons and sorghum, the range of cardinal temperatures is a lot higher. <br> The cardinal temperatures might change with
+                                                stage of advancement. <br> For instance, chilly treatment close to 32° F (0° C) of sprouted seeds prior to planting can change winter rye into the spring type; such treatment, called vernalization, has commonsense
+                                                application in cool environment plants.
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <br>
+                            <a href="https://www.weather-forecast.com/" class="primary" target="_blank">Know
+                                Your
+                                Temperature</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Rainfall</h3>
+                            <p class="card-text">An individual rancher thinks that powerful precipitation is that amount that is valuable in raising harvests planted on his dirt. </p>
+                            <br>
+                            <br>
+                            <a href="https://mausam.imd.gov.in/imd_latest/contents/index_category.php" class="primary" target="_blank">Know Your Rainfall</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <center>
+                <embed type="text/html" src="https://node-red-qjcdd-2021-07-18.eu-gb.mybluemix.net/ui/#!/0?socketid=Sg4zP2PerIvvGdIVAAAs" width="500" height="600">
+            </center>
+
+        </div>
+    </div>
+    <!-- Crop Recommendation Ends-->
+
+    <!-- Crop Production  -->
+    <div id="cropProduction" class="container">
+        <div class="jumbotron">
+            <h2>Yield Prediction</h2>
+
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Crop Productivity</h3>
+                            <p class="card-text">Calculate your total crop production.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Area</h3>
+                            <p class="card-text">Net Edited Region: This addresses the all out region planted once or potentially more than once in a specific year, for example the region is considered commonly as there are sowings in a year</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Farming Season</h3>
+                            <p class="card-text">Tenure for which crop is produced.</p>
+
+                            <div class="modal" id="myModal4">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <h2>Farming Season</h2>
+                                            <button type="button" class="close" data-dismiss="modal">×</button>
+                                        </div>
+
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <center>
+                <embed type="text/html" src="https://node-red-jllth-2021-07-21.eu-gb.mybluemix.net/ui/#!/0?socketid=YkCQPBmELjVnai4rAAAa" width="500" height="500">
+            </center>
+
+        </div>
+    </div>
+    <!-- Crop Production -->
+
+    <!-- Contact -->
+    <div id="contact" class="container">
+        <div class="jumbotron">
+            <h2>Contact : </h2>
+            <h3>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqbzgZFkXtFdWZkplvnsCtMjldRwnCjGjGvgHkcRLgNnZwLQvQhVHMLVkmxFnGJXHntsFL" target="_blank">
+                    <p>Email Us At : hustlers369@gmail.com</p>
+                </a>
+            </h3>
+            </a>
+        </div>
+    </div>
+    <!-- Contact -->
+
+    <!-- footer -->
+    <nav class="navbar navbar-inverse fixed-bottom">
+        <ul class="nav navbar-nav">
+
+        </ul>
+        <p class="navbar-text">© Team Hustlers : Hack Challenge-IBM 2021 SmartInternz</p>
+    </nav>
+
+    <!-- Watson Assistant -->
+    <script>
+        window.watsonAssistantChatOptions = {
+            integrationID: "ad38c544-b690-458b-819c-867cf379dc14", // The ID of this integration.
+            region: "eu-gb", // The region your integration is hosted in.
+            serviceInstanceID: "d425d0df-88c0-46ff-a754-4972b19efe5b", // The ID of your service instance.
+            onLoad: function(instance) {
+                instance.render();
+            }
+        };
+        setTimeout(function() {
+            const t = document.createElement('script');
+            t.src = "#";
+            document.head.appendChild(t);
+        });
+    </script>
+</body>
+
+</html>
